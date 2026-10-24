@@ -54,7 +54,7 @@ npm run preview
 3. Add the city name under `cities` in every file in `src/locales/`. The key must exactly match the YAML `id`.
 4. Create `src/assets/actions/london/` for the city's marker images.
 
-Routes and city selectors are generated from `cities.yaml`, so no component import or route declaration is needed. Keep every route unique; `/` is reserved for the default city.
+Routes and city selectors are generated from `cities.yaml`, so no component import or route declaration is needed. Keep every route unique; `/` is reserved for Miami.
 
 ### Add an event
 
