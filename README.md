@@ -22,7 +22,7 @@ npm run preview
 
 ## Content and configuration
 
-- Sightings are stored in `src/data/actions.source.yaml`.
+- Sightings are stored in `src/data/actions.yaml`.
 - Cities, geographic bounds, centers, and zoom limits are stored in `src/data/cities.yaml`.
 - Marker images live under `src/assets/actions/<city>/` and are discovered automatically during the build.
 - City names and event titles live in `src/locales/en.ts`, `pt.ts`, `es.ts`, and `fr.ts`.
@@ -58,7 +58,7 @@ Routes and city selectors are generated from `cities.yaml`, so no component impo
 
 ### Add an event
 
-Add one entry to `src/data/actions.source.yaml`:
+Add one entry to `src/data/actions.yaml`:
 
 ```yaml
 - id: london-example-billboard

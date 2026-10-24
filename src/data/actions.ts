@@ -1,4 +1,4 @@
-import source from './actions.source.yaml'
-import type { MarketingAction } from '../types'
+import type { MarketingAction } from "../types";
+import source from "./actions.yaml";
 
-export const marketingActions = source as MarketingAction[]
+export const marketingActions = source as MarketingAction[];
