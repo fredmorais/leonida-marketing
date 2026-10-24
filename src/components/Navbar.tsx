@@ -79,6 +79,7 @@ export function Navbar({ theme, setTheme, language, setLanguage, t, onSubmit }: 
       <span className="choice-label">{t('language')}</span>
       <div className="select-wrap language-select"><select aria-label={t('language')} value={language} onChange={event => setLanguage(event.target.value as Language)}>{(Object.keys(languageLabels) as Language[]).map(value => <option key={value} value={value}>{languageLabels[value]}</option>)}</select></div>
     </div>
+    <div className="legal-links"><NavLink to="/privacy">{t('privacy')}</NavLink><NavLink to="/terms">{t('terms')}</NavLink></div>
   </>
   const submitButton = <button className="submit-button icon-submit-button" aria-label={t('submit')} title={t('submit')} onClick={() => { setOpen(false); setSettingsOpen(false); onSubmit() }}><Icon name="plus" /></button>
 

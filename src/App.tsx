@@ -5,6 +5,8 @@ import { CityMap } from './components/CityMap'
 import { MarketingDetails } from './components/MarketingDetails'
 import { SubmitDialog } from './components/SubmitDialog'
 import { AboutPage } from './components/AboutPage'
+import { PrivacyPage } from './components/PrivacyPage'
+import { TermsPage } from './components/TermsPage'
 import { cityById, routeToCity } from './data/cities'
 import { marketingActions } from './data/actions'
 import { translate, type TranslationKey } from './i18n'
@@ -61,7 +63,7 @@ export function App() {
 
   const mapPage = <div className={`map-layout ${selected ? 'has-details' : ''}`}><CityMap key={`${cityId}-${language}`} city={city} actions={actions} selectedId={selected} onSelect={selectAction} t={t}/>{selectedAction && <MarketingDetails action={selectedAction} onClose={closeDetails} t={t}/>}</div>
   return <div className="app-shell"><Navbar theme={theme} setTheme={setTheme} language={language} setLanguage={setLanguage} t={t} onSubmit={openSubmit}/>
-    <div className="app-content"><Routes><Route path="/about" element={<AboutPage t={t}/>}/><Route path="*" element={isMapRoute ? mapPage : <Navigate to="/" replace/>}/></Routes></div>
+    <div className="app-content"><Routes><Route path="/about" element={<AboutPage t={t}/>}/><Route path="/privacy" element={<PrivacyPage t={t}/>}/><Route path="/terms" element={<TermsPage t={t}/>}/><Route path="*" element={isMapRoute ? mapPage : <Navigate to="/" replace/>}/></Routes></div>
     <SubmitDialog open={submitOpen} onClose={closeSubmit} t={t}/>
   </div>
 }
