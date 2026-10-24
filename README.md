@@ -7,7 +7,7 @@
 
 **An interactive map of real-world GTA VI marketing sightings.**
 
-<a href="https://leonida-market.ing/">
+<a href="https://leonidamarket.ing/">
   <img src="https://img.shields.io/badge/EXPLORE_THE_LIVE_MAP-FF38B5?style=for-the-badge&labelColor=9255E8" alt="Explore the live Leonida Marketing map">
 </a>
 
