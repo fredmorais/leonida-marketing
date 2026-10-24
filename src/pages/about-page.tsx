@@ -1,13 +1,11 @@
 import { useAppContext } from "../app-context";
+import { PageLayout } from "../components/page-layout";
 
 export function AboutPage() {
   const { t } = useAppContext();
   const translationNote = t("aboutTranslationNote");
   return (
-    <main className="page-shell">
-      <article className="page-post">
-        <p className="eyebrow">LEONIDA MARKETING / 2026</p>
-        <h1 className="page-title">{t("aboutTitle")}</h1>
+    <PageLayout eyebrow="LEONIDA MARKETING / 2026" title={t("aboutTitle")}>
         <p>{t("aboutBody1")}</p>
         <p>{t("aboutBody2")}</p>
         <p>
@@ -33,10 +31,9 @@ export function AboutPage() {
           .
         </p>
         {translationNote && (
-          <p className="translation-note">{translationNote}</p>
+          <p className="rounded-r-[10px] border-l-3 border-(--purple) bg-[color-mix(in_srgb,var(--purple)_7%,transparent)] px-3.75 py-3.25 text-sm!">{translationNote}</p>
         )}
         <p>{t("aboutDisclaimer")}</p>
-      </article>
-    </main>
+    </PageLayout>
   );
 }

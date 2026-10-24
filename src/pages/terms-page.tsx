@@ -1,12 +1,10 @@
 import { useAppContext } from "../app-context";
+import { PageLayout } from "../components/page-layout";
 
 export function TermsPage() {
   const { t } = useAppContext();
   return (
-    <main className="page-shell">
-      <article className="page-post legal-post">
-        <p className="eyebrow">LEONIDA MARKETING / {t("lastUpdated")}</p>
-        <h1 className="page-title">{t("termsTitle")}</h1>
+    <PageLayout legal eyebrow={<>LEONIDA MARKETING / {t("lastUpdated")}</>} title={t("termsTitle")}>
         <p>{t("termsIntro")}</p>
         <h2>{t("termsAccuracyTitle")}</h2>
         <p>{t("termsAccuracyBody")}</p>
@@ -28,8 +26,7 @@ export function TermsPage() {
         </p>
         <h2>{t("termsDisclaimerTitle")}</h2>
         <p>{t("termsDisclaimerBody")}</p>
-        <p className="legal-note">{t("termsChanges")}</p>
-      </article>
-    </main>
+        <p className="border-t border-(--border) pt-5.5 text-sm!">{t("termsChanges")}</p>
+    </PageLayout>
   );
 }

@@ -96,70 +96,6 @@
     background-size: 4px 4px;
     padding: 9px 30px 9px 11px;
   }
-
-  .eyebrow {
-    margin: 0 0 8px;
-    color: var(--pink);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }
-
-  .page-shell {
-    height: 100%;
-    overflow-y: auto;
-    padding: clamp(64px, 10vw, 130px) max(7vw, 28px) 100px;
-    background: radial-gradient(circle at 84% 8%, color-mix(in srgb, var(--pink) 13%, transparent), transparent 32%), var(--bg);
-  }
-
-  .page-post { max-width: 760px; }
-
-  .page-title {
-    margin: 0 0 36px;
-    font-family: "Space Grotesk", ui-sans-serif, sans-serif;
-    font-size: clamp(42px, 6vw, 76px);
-    font-weight: 700;
-    letter-spacing: -0.06em;
-    line-height: 0.98;
-  }
-
-  .page-post > p:not(.eyebrow) {
-    max-width: 700px;
-    margin: 0 0 22px;
-    color: var(--muted);
-    font-size: clamp(17px, 1.6vw, 21px);
-    line-height: 1.65;
-  }
-
-  .page-post a {
-    color: var(--pink);
-    font-weight: 700;
-    text-underline-offset: 3px;
-  }
-
-  .page-post .translation-note {
-    border-left: 3px solid var(--purple);
-    border-radius: 0 10px 10px 0;
-    background: color-mix(in srgb, var(--purple) 7%, transparent);
-    padding: 13px 15px;
-    font-size: 14px;
-  }
-
-  .page-post > p:last-child { margin-top: 34px; font-size: 15px; }
-  .legal-post .page-title { font-size: clamp(40px, 5vw, 64px); }
-
-  .legal-post h2 {
-    margin: 42px 0 10px;
-    font-family: "Space Grotesk", ui-sans-serif, sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 1.2;
-  }
-
-  .legal-post > p:not(.eyebrow) { font-size: 17px; }
-  .legal-post .legal-note { border-top: 1px solid var(--border); padding-top: 22px; font-size: 14px; }
 }
 
 .submit-dialog::backdrop {
@@ -216,11 +152,6 @@
 
 .image-action-marker.selected > img {
   filter: drop-shadow(0 7px 9px rgba(233, 24, 158, 0.38)) drop-shadow(0 0 7px rgba(16, 184, 206, 0.22));
-}
-
-@media (max-width: 760px) {
-  .page-shell { padding: 55px 22px 80px; }
-  .page-title { font-size: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

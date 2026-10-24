@@ -1,12 +1,10 @@
 import { useAppContext } from "../app-context";
+import { PageLayout } from "../components/page-layout";
 
 export function PrivacyPage() {
   const { t } = useAppContext();
   return (
-    <main className="page-shell">
-      <article className="page-post legal-post">
-        <p className="eyebrow">LEONIDA MARKETING / {t("lastUpdated")}</p>
-        <h1 className="page-title">{t("privacyTitle")}</h1>
+    <PageLayout legal eyebrow={<>LEONIDA MARKETING / {t("lastUpdated")}</>} title={t("privacyTitle")}>
         <p>{t("privacyIntro")}</p>
         <h2>{t("privacyCloudflareTitle")}</h2>
         <p>{t("privacyCloudflareBody")}</p>
@@ -48,8 +46,7 @@ export function PrivacyPage() {
           </a>
           .
         </p>
-        <p className="legal-note">{t("privacyChanges")}</p>
-      </article>
-    </main>
+        <p className="border-t border-(--border) pt-5.5 text-sm!">{t("privacyChanges")}</p>
+    </PageLayout>
   );
 }

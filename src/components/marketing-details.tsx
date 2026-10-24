@@ -62,7 +62,7 @@ export function MarketingDetails({
         >
           <X size={20} aria-hidden="true" />
         </button>
-        <p className="eyebrow">{t(`cities.${action.city}`)}</p>
+        <p className="mb-2 text-[11px] font-bold tracking-[.16em] text-(--pink) uppercase">{t(`cities.${action.city}`)}</p>
         <h1 className="font-display mr-12.5 text-3xl leading-[1.08] font-bold tracking-[-.045em] max-[760px]:mr-0 max-[760px]:text-[29px]">
           {title}
         </h1>
