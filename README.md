@@ -1,10 +1,20 @@
+<div align="center">
+
 # Leonida Marketing
 
-![Leonida Marketing map preview](./src/assets/preview.png)
+**An interactive map of real-world GTA VI marketing sightings.**
 
-With new things coming up every day, I decided to create this project to help the community track everything that’s happening in the real world around GTA VI marketing. It is a responsive, map-focused React app for cataloguing real-world GTA VI marketing sightings. It uses MapLibre GL JS with OpenFreeMap vector tiles, OpenStreetMap data, YAML content files, and no backend.
+<a href="https://leonida-market.ing/">
+  <img src="https://img.shields.io/badge/EXPLORE_THE_LIVE_MAP-FF38B5?style=for-the-badge&labelColor=9255E8" alt="Explore the live Leonida Marketing map">
+</a>
 
-[Website](https://leonida-market.ing/)
+<br><br>
+
+<img src="./src/assets/preview.png" width="760" alt="Leonida Marketing map preview">
+
+</div>
+
+Leonida Marketing helps the community track the GTA VI campaign as it comes to life in cities around the world—from billboards and murals to custom vehicles and branded locations. The responsive, map-focused app uses MapLibre GL JS, OpenFreeMap vector tiles, OpenStreetMap data, and YAML content files, with no backend required.
 
 ## Run locally
 
