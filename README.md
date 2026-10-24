@@ -37,4 +37,10 @@ Upload the generated `dist/` directory. Because this app uses `BrowserRouter`, c
 
 The submission dialog is intentionally a preview-only flow: it validates input and exports JSON, but never claims to send data.
 
-This is an unofficial, non-commercial fan project and is not affiliated with Rockstar Games or Take-Two Interactive.
+## License
+
+Original project code is licensed under the [GNU Affero General Public License v3.0](./LICENSE). Commercial use is allowed, but distributed modifications and modified versions offered over a network must make their corresponding source available under the same license.
+
+Dependencies retain their own licenses. Third-party map data, embedded posts, names, logos, trademarks, and other third-party material are not relicensed by this project.
+
+This is an unofficial fan project and is not affiliated with Rockstar Games or Take-Two Interactive.
