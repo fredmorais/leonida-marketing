@@ -12,7 +12,7 @@ export function CitySelector({
 }) {
   const navigate = useNavigate();
   return (
-    <div className="absolute top-[22px] left-[22px] z-5 max-[760px]:top-3.5 max-[760px]:left-3.5">
+    <div className="absolute top-5.5 left-5.5 z-5 max-[760px]:top-3.5 max-[760px]:left-3.5">
       <div
         className="flex gap-1 rounded-2xl border border-(--border) bg-(--surface-glass) p-1 shadow-(--shadow) backdrop-blur-2xl max-[760px]:hidden"
         aria-label={t("selectCity")}

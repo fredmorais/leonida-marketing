@@ -31,7 +31,7 @@ function Countdown({ t }: { t: (key: TranslationKey) => string }) {
   const clock = `${days}d ${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   return (
     <div
-      className="flex items-baseline gap-2 whitespace-nowrap rounded-[11px] border border-(--border) bg-[color-mix(in_srgb,var(--pink)_5%,var(--surface))] px-[11px] py-[7px]"
+      className="flex items-baseline gap-2 whitespace-nowrap rounded-[11px] border border-(--border) bg-[color-mix(in_srgb,var(--pink)_5%,var(--surface))] px-2.75 py-1.75"
       aria-label={`${t("countdown")}: ${clock}`}
     >
       <strong className="font-display text-[13px] font-bold text-(--text) tabular-nums max-[760px]:text-xs">
@@ -116,7 +116,7 @@ export function Navbar({
   const navLink = (active: boolean) =>
     `rounded-[10px] px-3 py-2.5 text-sm font-semibold no-underline max-[760px]:p-3 ${active ? "bg-[color-mix(in_srgb,var(--text)_6%,transparent)] text-(--text)" : "text-(--muted) hover:bg-[color-mix(in_srgb,var(--text)_6%,transparent)] hover:text-(--text)"}`;
   const iconButton =
-    "grid size-[42px] shrink-0 place-items-center rounded-xl border border-(--border) bg-(--surface) text-(--text)";
+    "grid size-10.5 shrink-0 place-items-center rounded-xl border border-(--border) bg-(--surface) text-(--text)";
   const navLinks = (
     <>
       <NavLink to="/" className={({ isActive }) => navLink(isActive)}>
@@ -137,12 +137,12 @@ export function Navbar({
         <span className="text-[11px] font-bold tracking-[.07em] text-(--muted) uppercase">
           {t("theme")}
         </span>
-        <div className="flex rounded-xl border border-(--border) bg-[color-mix(in_srgb,var(--text)_3%,var(--surface))] p-[3px]">
+        <div className="flex rounded-xl border border-(--border) bg-[color-mix(in_srgb,var(--text)_3%,var(--surface))] p-0.75">
           {themeChoices.map((value) => (
             <button
               key={value}
               type="button"
-              className={`min-h-[30px] rounded-lg border-0 px-2.5 text-xs font-bold ${theme === value ? "bg-(--surface) text-(--text) shadow-[0_2px_8px_rgba(25,17,34,.12)]" : "bg-transparent text-(--muted) hover:text-(--text)"}`}
+              className={`min-h-7.5 rounded-lg border-0 px-2.5 text-xs font-bold ${theme === value ? "bg-(--surface) text-(--text) shadow-[0_2px_8px_rgba(25,17,34,.12)]" : "bg-transparent text-(--muted) hover:text-(--text)"}`}
               aria-pressed={theme === value}
               onClick={() => setTheme(value)}
             >
@@ -157,7 +157,7 @@ export function Navbar({
         </span>
         <div>
           <select
-            className="select-control min-w-[145px] text-[13px] font-bold"
+            className="select-control min-w-36.25 text-[13px] font-bold"
             aria-label={t("language")}
             value={language}
             onChange={(event) => setLanguage(event.target.value as Language)}
@@ -190,7 +190,7 @@ export function Navbar({
   );
   const submitButton = (
     <button
-      className="grid size-[42px] shrink-0 place-items-center rounded-xl border-0 bg-gradient-to-br from-(--pink-bright) to-(--purple) p-0 font-bold text-white shadow-[0_6px_20px_rgba(233,24,158,.24)] hover:-translate-y-px hover:brightness-107 max-[760px]:mt-1 max-[760px]:size-12 max-[760px]:min-h-12 max-[760px]:self-end"
+      className="grid size-10.5 shrink-0 place-items-center rounded-xl border-0 bg-gradient-to-br from-(--pink-bright) to-(--purple) p-0 font-bold text-white shadow-[0_6px_20px_rgba(233,24,158,.24)] hover:-translate-y-px hover:brightness-107 max-[760px]:mt-1 max-[760px]:size-12 max-[760px]:min-h-12 max-[760px]:self-end"
       aria-label={t("submit")}
       title={t("submit")}
       onClick={() => {
@@ -204,26 +204,26 @@ export function Navbar({
   );
 
   return (
-    <header className="relative z-50 flex h-[72px] shrink-0 items-center border-b border-(--border) bg-(--surface) pr-[max(24px,env(safe-area-inset-right))] pl-[max(24px,env(safe-area-inset-left))] max-[760px]:h-16 max-[760px]:gap-2 max-[760px]:pr-[max(12px,env(safe-area-inset-right))] max-[760px]:pl-[max(12px,env(safe-area-inset-left))]">
+    <header className="relative z-50 flex h-18 shrink-0 items-center border-b border-(--border) bg-(--surface) pr-[max(24px,env(safe-area-inset-right))] pl-[max(24px,env(safe-area-inset-left))] max-[760px]:h-16 max-[760px]:gap-2 max-[760px]:pr-[max(12px,env(safe-area-inset-right))] max-[760px]:pl-[max(12px,env(safe-area-inset-left))]">
       <Link
         to="/"
         className="inline-flex shrink-0 items-center"
         aria-label="Leonida Marketing home"
       >
         <img
-          className="h-[46px] w-auto object-contain dark:hidden max-[760px]:h-9"
+          className="h-11.5 w-auto object-contain dark:hidden max-[760px]:h-9"
           src={logoUrl}
           alt="Leonida Marketing"
         />
         <img
-          className="hidden h-[46px] w-auto object-contain dark:block max-[760px]:h-9"
+          className="hidden h-11.5 w-auto object-contain dark:block max-[760px]:h-9"
           src={logoDarkUrl}
           alt=""
           aria-hidden="true"
         />
       </Link>
       <nav
-        className="ml-[34px] flex w-full items-center gap-2.5 max-[760px]:hidden"
+        className="ml-8.5 flex w-full items-center gap-2.5 max-[760px]:hidden"
         aria-label="Main navigation"
       >
         {navLinks}
@@ -240,7 +240,7 @@ export function Navbar({
             <Settings2 size={20} aria-hidden="true" />
           </button>
           {settingsOpen && (
-            <div className="absolute top-[calc(100%+10px)] right-0 z-60 grid w-[310px] gap-3.5 rounded-2xl border border-(--border) bg-(--surface) p-4 shadow-(--shadow)">
+            <div className="absolute top-[calc(100%+10px)] right-0 z-60 grid w-77.5 gap-3.5 rounded-2xl border border-(--border) bg-(--surface) p-4 shadow-(--shadow)">
               {settings}
             </div>
           )}

@@ -272,7 +272,7 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
           </p>
         </div>
       )}
-      <div className="absolute bottom-3.5 left-[18px] z-3 rounded-[7px] bg-(--surface-glass) px-2.25 py-1.5 text-[10px] font-bold tracking-[.04em] text-(--muted) backdrop-blur-xl max-[760px]:bottom-[max(10px,env(safe-area-inset-bottom))] max-[760px]:left-3 max-[760px]:max-w-40 [&_a]:text-inherit [&_a]:no-underline [&_a:hover]:underline">
+      <div className="absolute bottom-3.5 left-4.5 z-3 rounded-[7px] bg-(--surface-glass) px-2.25 py-1.5 text-[10px] font-bold tracking-[.04em] text-(--muted) backdrop-blur-xl max-[760px]:bottom-[max(10px,env(safe-area-inset-bottom))] max-[760px]:left-3 max-[760px]:max-w-40 [&_a]:text-inherit [&_a]:no-underline [&_a:hover]:underline">
         <a
           href="https://www.openstreetmap.org/copyright"
           target="_blank"
@@ -287,7 +287,7 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
         · {t("locationsNotice")}
       </div>
       <div
-        className="absolute right-5 bottom-5 z-5 flex flex-col overflow-hidden rounded-[14px] border border-(--border) bg-(--surface-glass) shadow-(--shadow) backdrop-blur-xl max-[760px]:right-3.5 max-[760px]:bottom-[max(14px,env(safe-area-inset-bottom))] [&_button]:grid [&_button]:h-[42px] [&_button]:w-11 [&_button]:place-items-center [&_button]:border-0 [&_button]:border-b [&_button]:border-(--border) [&_button]:bg-transparent [&_button:hover]:bg-[color-mix(in_srgb,var(--text)_7%,transparent)] [&_button:last-child]:border-0"
+        className="absolute right-5 bottom-5 z-5 flex flex-col overflow-hidden rounded-[14px] border border-(--border) bg-(--surface-glass) shadow-(--shadow) backdrop-blur-xl max-[760px]:right-3.5 max-[760px]:bottom-[max(14px,env(safe-area-inset-bottom))] [&_button]:grid [&_button]:h-10.5 [&_button]:w-11 [&_button]:place-items-center [&_button]:border-0 [&_button]:border-b [&_button]:border-(--border) [&_button]:bg-transparent [&_button:hover]:bg-[color-mix(in_srgb,var(--text)_7%,transparent)] [&_button:last-child]:border-0"
         aria-label="Map controls"
       >
         <button

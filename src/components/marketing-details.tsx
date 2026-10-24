@@ -45,29 +45,29 @@ export function MarketingDetails({
   const title = t(`actions.${action.id}`);
   return (
     <aside
-      className="relative z-10 h-full w-[372px] shrink-0 overflow-y-auto border-l border-(--border) bg-(--surface) [scrollbar-width:thin] max-[760px]:absolute max-[760px]:inset-0 max-[760px]:w-full max-[760px]:border-0"
+      className="relative z-10 h-full w-93 shrink-0 overflow-y-auto border-l border-(--border) bg-(--surface) [scrollbar-width:thin] max-[760px]:absolute max-[760px]:inset-0 max-[760px]:w-full max-[760px]:border-0"
       aria-label={title}
     >
-      <div className="relative bg-[linear-gradient(160deg,color-mix(in_srgb,var(--pink)_7%,var(--surface)),var(--surface)_72%)] px-[26px] pt-[30px] pb-3.5 max-[760px]:px-[22px] max-[760px]:pt-[15px] max-[760px]:pb-3">
+      <div className="relative bg-[linear-gradient(160deg,color-mix(in_srgb,var(--pink)_7%,var(--surface)),var(--surface)_72%)] px-6.5 pt-7.5 pb-3.5 max-[760px]:px-5.5 max-[760px]:pt-3.75 max-[760px]:pb-3">
         <button
-          className="mb-[18px] -ml-2 hidden items-center gap-1.25 border-0 bg-transparent p-2 font-bold text-(--muted) max-[760px]:flex"
+          className="mb-4.5 -ml-2 hidden items-center gap-1.25 border-0 bg-transparent p-2 font-bold text-(--muted) max-[760px]:flex"
           onClick={onClose}
         >
           <ChevronLeft size={20} aria-hidden="true" /> {t("back")}
         </button>
         <button
-          className="absolute top-[18px] right-[18px] grid size-[42px] place-items-center rounded-xl border border-(--border) bg-(--surface) text-(--text) max-[760px]:hidden"
+          className="absolute top-4.5 right-4.5 grid size-10.5 place-items-center rounded-xl border border-(--border) bg-(--surface) text-(--text) max-[760px]:hidden"
           onClick={onClose}
           aria-label={t("close")}
         >
           <X size={20} aria-hidden="true" />
         </button>
         <p className="eyebrow">{t(`cities.${action.city}`)}</p>
-        <h1 className="font-display mr-[50px] text-[30px] leading-[1.08] font-bold tracking-[-.045em] max-[760px]:mr-0 max-[760px]:text-[29px]">
+        <h1 className="font-display mr-12.5 text-3xl leading-[1.08] font-bold tracking-[-.045em] max-[760px]:mr-0 max-[760px]:text-[29px]">
           {title}
         </h1>
       </div>
-      <div className="px-[26px] pt-2.5 pb-9 max-[760px]:px-[22px] max-[760px]:pt-2 max-[760px]:pb-[max(38px,env(safe-area-inset-bottom))]">
+      <div className="px-6.5 pt-2.5 pb-9 max-[760px]:px-5.5 max-[760px]:pt-2 max-[760px]:pb-[max(38px,env(safe-area-inset-bottom))]">
         <div
           className="grid min-w-0 gap-2.5 [&_iframe]:mx-auto! [&_iframe]:block [&_iframe]:max-w-full!"
           key={`${action.id}-${embedTheme}`}
