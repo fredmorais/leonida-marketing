@@ -1,6 +1,9 @@
 <div align="center">
 
-# Leonida Marketing
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./src/assets/logo-dark.png">
+  <img src="./src/assets/logo.png" width="420" alt="Leonida Marketing">
+</picture>
 
 **An interactive map of real-world GTA VI marketing sightings.**
 
@@ -10,7 +13,8 @@
 
 <br><br>
 
-<img src="./src/assets/preview.png" width="760" alt="Leonida Marketing map preview">
+<img src="./src/assets/preview-1.png" width="49%" alt="Leonida Marketing map overview">
+<img src="./src/assets/preview-2.png" width="49%" alt="Leonida Marketing action details">
 
 </div>
 
