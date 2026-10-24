@@ -27,16 +27,16 @@ export function MarketingDetails({ action, onClose, t }: { action: MarketingActi
   }, [action.id, embedTheme])
 
   const title = t(`actions.${action.id}`)
-  return <aside className="details" aria-label={title}>
-    <div className="details-top">
-      <button className="back-button mobile-only" onClick={onClose}><Icon name="back"/> {t('back')}</button>
-      <button className="icon-button details-close desktop-only" onClick={onClose} aria-label={t('close')}><Icon name="close"/></button>
-      <p className="eyebrow">{t(`cities.${action.city}`)}</p><h1>{title}</h1>
+  return <aside className="relative z-10 h-full w-[372px] shrink-0 overflow-y-auto border-l border-[var(--border)] bg-[var(--surface)] [scrollbar-width:thin] max-[760px]:absolute max-[760px]:inset-0 max-[760px]:w-full max-[760px]:border-0" aria-label={title}>
+    <div className="relative bg-[linear-gradient(160deg,color-mix(in_srgb,var(--pink)_7%,var(--surface)),var(--surface)_72%)] px-[26px] pt-[30px] pb-3.5 max-[760px]:px-[22px] max-[760px]:pt-[15px] max-[760px]:pb-3">
+      <button className="mb-[18px] -ml-2 hidden items-center gap-1.25 border-0 bg-transparent p-2 font-bold text-[var(--muted)] max-[760px]:flex" onClick={onClose}><Icon name="back"/> {t('back')}</button>
+      <button className="absolute top-[18px] right-[18px] grid size-[42px] place-items-center rounded-xl border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] max-[760px]:hidden" onClick={onClose} aria-label={t('close')}><Icon name="close"/></button>
+      <p className="eyebrow">{t(`cities.${action.city}`)}</p><h1 className="font-display mr-[50px] text-[30px] leading-[1.08] font-bold tracking-[-.045em] max-[760px]:mr-0 max-[760px]:text-[29px]">{title}</h1>
     </div>
-    <div className="details-body">
-      <div className="sources" key={`${action.id}-${embedTheme}`}>{action.sources.map((source, index) => {
+    <div className="px-[26px] pt-2.5 pb-9 max-[760px]:px-[22px] max-[760px]:pt-2 max-[760px]:pb-[max(38px,env(safe-area-inset-bottom))]">
+      <div className="grid min-w-0 gap-2.5 [&_iframe]:mx-auto! [&_iframe]:block [&_iframe]:max-w-full!" key={`${action.id}-${embedTheme}`}>{action.sources.map((source, index) => {
         const community = source.url.match(/\/r\/([^/]+)/)?.[1] ?? 'reddit'
-        return <blockquote className="reddit-embed-bq" data-embed-height="500" data-embed-theme={embedTheme} key={`${source.url}-${index}`}>
+        return <blockquote className="m-0 border-0 bg-transparent py-3.5 text-[13px] leading-normal [&_a]:text-[var(--text)]" data-embed-height="500" data-embed-theme={embedTheme} key={`${source.url}-${index}`}>
           <a href={source.url}>{title}</a><br/>
           in <a href={`https://www.reddit.com/r/${community}/`}>{community}</a>
         </blockquote>

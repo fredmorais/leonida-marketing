@@ -61,9 +61,9 @@ export function App() {
   }, [theme])
   useEffect(() => { document.documentElement.lang = language }, [language])
 
-  const mapPage = <div className={`map-layout ${selected ? 'has-details' : ''}`}><CityMap key={`${cityId}-${language}`} city={city} actions={actions} selectedId={selected} onSelect={selectAction} t={t}/>{selectedAction && <MarketingDetails action={selectedAction} onClose={closeDetails} t={t}/>}</div>
-  return <div className="app-shell"><Navbar theme={theme} setTheme={setTheme} language={language} setLanguage={setLanguage} t={t} onSubmit={openSubmit}/>
-    <div className="app-content"><Routes><Route path="/about" element={<AboutPage t={t}/>}/><Route path="/privacy" element={<PrivacyPage t={t}/>}/><Route path="/terms" element={<TermsPage t={t}/>}/><Route path="*" element={isMapRoute ? mapPage : <Navigate to="/" replace/>}/></Routes></div>
+  const mapPage = <div className="relative flex h-full min-h-0 min-w-0"><CityMap key={`${cityId}-${language}`} city={city} actions={actions} selectedId={selected} onSelect={selectAction} t={t}/>{selectedAction && <MarketingDetails action={selectedAction} onClose={closeDetails} t={t}/>}</div>
+  return <div className="flex h-dvh min-h-0 flex-col bg-[var(--bg)]"><Navbar theme={theme} setTheme={setTheme} language={language} setLanguage={setLanguage} t={t} onSubmit={openSubmit}/>
+    <div className="relative min-h-0 flex-1"><Routes><Route path="/about" element={<AboutPage t={t}/>}/><Route path="/privacy" element={<PrivacyPage t={t}/>}/><Route path="/terms" element={<TermsPage t={t}/>}/><Route path="*" element={isMapRoute ? mapPage : <Navigate to="/" replace/>}/></Routes></div>
     <SubmitDialog open={submitOpen} onClose={closeSubmit} t={t}/>
   </div>
 }
