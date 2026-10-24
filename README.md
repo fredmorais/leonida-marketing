@@ -2,9 +2,7 @@
 
 ![Leonida IRL map preview](./src/assets/preview.png)
 
-With new things coming up every day, I decided to create this project to help the community track everything that’s happening in the real world around GTA VI marketing.
-
-A responsive, map-focused React app for cataloguing real-world GTA VI marketing sightings. It uses MapLibre GL JS with OpenFreeMap vector tiles, OpenStreetMap data, static JSON content, and no backend.
+With new things coming up every day, I decided to create this project to help the community track everything that’s happening in the real world around GTA VI marketing. It is a responsive, map-focused React app for cataloguing real-world GTA VI marketing sightings. It uses MapLibre GL JS with OpenFreeMap vector tiles, OpenStreetMap data, static JSON content, and no backend.
 
 [Website](https://leonida-market.ing/)
 
