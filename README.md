@@ -1,6 +1,6 @@
 # Leonida Marketing
 
-![Leonida IRL map preview](./src/assets/preview.png)
+![Leonida Marketing map preview](./src/assets/preview.png)
 
 With new things coming up every day, I decided to create this project to help the community track everything that’s happening in the real world around GTA VI marketing. It is a responsive, map-focused React app for cataloguing real-world GTA VI marketing sightings. It uses MapLibre GL JS with OpenFreeMap vector tiles, OpenStreetMap data, static JSON content, and no backend.
 
@@ -33,7 +33,7 @@ Every sighting is positioned from its longitude and latitude. MapLibre constrain
 
 ## Static hosting
 
-Upload the generated `dist/` directory. Because this app uses `BrowserRouter`, configure the static host to rewrite `/new-york`, `/chicago`, `/los-angeles`, `/paris`, `/about`, and unknown application paths to `index.html`. Without that fallback, direct visits to nested routes will return a 404.
+Upload the generated `dist/` directory. Because this app uses `BrowserRouter`, configure the static host to rewrite `/new-york`, `/chicago`, `/los-angeles`, `/paris`, `/about`, `/privacy`, `/terms`, and unknown application paths to `index.html`. Without that fallback, direct visits to nested routes will return a 404.
 
 The submission dialog is intentionally a preview-only flow: it validates input and exports JSON, but never claims to send data.
 

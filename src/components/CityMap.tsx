@@ -342,6 +342,12 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
       );
     const action = actions.find((item) => item.id === selectedId);
     const map = mapRef.current;
+    if (!map) return;
+
+    const detailsPadding = window.matchMedia("(min-width: 761px)").matches && action
+      ? { top: 0, right: 372, bottom: 0, left: 0 }
+      : { top: 0, right: 0, bottom: 0, left: 0 };
+
     if (action && map) {
       const currentZoom = map.getZoom();
       // Stay within the current integer zoom band. Crossing that boundary
@@ -354,16 +360,16 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
       map.stop();
       map.easeTo({
         center: [action.longitude, action.latitude],
-        // Keep the pin centered in the visible part of the map when the
-        // desktop details panel covers its right-hand side.
-        offset: window.matchMedia("(min-width: 761px)").matches
-          ? [-186, 0]
-          : [0, 0],
+        // Make the camera, bounds, and gesture handling use the visible map
+        // column instead of the canvas area hidden behind the details panel.
+        padding: detailsPadding,
         zoom: actionZoom,
         duration: 750,
         easing: (progress) => 1 - Math.pow(1 - progress, 3),
         essential: true,
       });
+    } else {
+      map.easeTo({ padding: detailsPadding, duration: 300 });
     }
   }, [actions, city.maxZoom, selectedId]);
 

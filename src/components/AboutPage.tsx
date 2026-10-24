@@ -3,7 +3,7 @@ export function AboutPage({ t }: { t: (key: TranslationKey) => string }) {
   const translationNote = t('aboutTranslationNote')
   return <main className="about-page">
     <article className="about-post">
-      <p className="eyebrow">LEONIDA IRL / 2026</p>
+      <p className="eyebrow">LEONIDA MARKETING / 2026</p>
       <h1>{t('aboutTitle')}</h1>
       <p>{t('aboutBody1')}</p>
       <p>{t('aboutBody2')}</p>
