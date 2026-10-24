@@ -254,25 +254,25 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
 
   return (
     <section
-      className="relative min-h-0 min-w-0 flex-1 overflow-hidden bg-[var(--map-land)]"
+      className="relative min-h-0 min-w-0 flex-1 overflow-hidden bg-(--map-land)"
       aria-label={`${t(`cities.${city.id}`)} marketing map`}
     >
       <CitySelector activeCity={city.id} t={t} />
       <div ref={containerRef} className="block h-full w-full" />
       {!actions.length && (
-        <div className="absolute top-1/2 left-1/2 z-4 w-[min(330px,calc(100%-40px))] -translate-x-1/2 -translate-y-1/2 rounded-[20px] border border-[var(--border)] bg-[var(--surface-glass)] p-7 text-center shadow-[var(--shadow)] backdrop-blur-2xl">
-          <span className="inline-grid size-12 place-items-center rounded-[15px] bg-[color-mix(in_srgb,var(--pink)_10%,transparent)] text-[var(--pink)]">
+        <div className="absolute top-1/2 left-1/2 z-4 w-[min(330px,calc(100%-40px))] -translate-x-1/2 -translate-y-1/2 rounded-[20px] border border-(--border) bg-(--surface-glass) p-7 text-center shadow-(--shadow) backdrop-blur-2xl">
+          <span className="inline-grid size-12 place-items-center rounded-[15px] bg-[color-mix(in_srgb,var(--pink)_10%,transparent)] text-(--pink)">
             <MapPin size={24} aria-hidden="true" />
           </span>
           <strong className="font-display mt-3 mb-1.25 block text-lg font-bold">
             {t("noSightings")}
           </strong>
-          <p className="m-0 text-sm leading-normal text-[var(--muted)]">
+          <p className="m-0 text-sm leading-normal text-(--muted)">
             {t("noSightingsBody")}
           </p>
         </div>
       )}
-      <div className="absolute bottom-3.5 left-[18px] z-3 rounded-[7px] bg-[var(--surface-glass)] px-2.25 py-1.5 text-[10px] font-bold tracking-[.04em] text-[var(--muted)] backdrop-blur-xl max-[760px]:bottom-[max(10px,env(safe-area-inset-bottom))] max-[760px]:left-3 max-[760px]:max-w-40 [&_a]:text-inherit [&_a]:no-underline [&_a:hover]:underline">
+      <div className="absolute bottom-3.5 left-[18px] z-3 rounded-[7px] bg-(--surface-glass) px-2.25 py-1.5 text-[10px] font-bold tracking-[.04em] text-(--muted) backdrop-blur-xl max-[760px]:bottom-[max(10px,env(safe-area-inset-bottom))] max-[760px]:left-3 max-[760px]:max-w-40 [&_a]:text-inherit [&_a]:no-underline [&_a:hover]:underline">
         <a
           href="https://www.openstreetmap.org/copyright"
           target="_blank"
@@ -287,7 +287,7 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
         · {t("locationsNotice")}
       </div>
       <div
-        className="absolute right-5 bottom-5 z-5 flex flex-col overflow-hidden rounded-[14px] border border-[var(--border)] bg-[var(--surface-glass)] shadow-[var(--shadow)] backdrop-blur-xl max-[760px]:right-3.5 max-[760px]:bottom-[max(14px,env(safe-area-inset-bottom))] [&_button]:grid [&_button]:h-[42px] [&_button]:w-11 [&_button]:place-items-center [&_button]:border-0 [&_button]:border-b [&_button]:border-[var(--border)] [&_button]:bg-transparent [&_button:hover]:bg-[color-mix(in_srgb,var(--text)_7%,transparent)] [&_button:last-child]:border-0"
+        className="absolute right-5 bottom-5 z-5 flex flex-col overflow-hidden rounded-[14px] border border-(--border) bg-(--surface-glass) shadow-(--shadow) backdrop-blur-xl max-[760px]:right-3.5 max-[760px]:bottom-[max(14px,env(safe-area-inset-bottom))] [&_button]:grid [&_button]:h-[42px] [&_button]:w-11 [&_button]:place-items-center [&_button]:border-0 [&_button]:border-b [&_button]:border-(--border) [&_button]:bg-transparent [&_button:hover]:bg-[color-mix(in_srgb,var(--text)_7%,transparent)] [&_button:last-child]:border-0"
         aria-label="Map controls"
       >
         <button

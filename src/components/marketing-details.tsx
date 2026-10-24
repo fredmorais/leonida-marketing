@@ -45,18 +45,18 @@ export function MarketingDetails({
   const title = t(`actions.${action.id}`);
   return (
     <aside
-      className="relative z-10 h-full w-[372px] shrink-0 overflow-y-auto border-l border-[var(--border)] bg-[var(--surface)] [scrollbar-width:thin] max-[760px]:absolute max-[760px]:inset-0 max-[760px]:w-full max-[760px]:border-0"
+      className="relative z-10 h-full w-[372px] shrink-0 overflow-y-auto border-l border-(--border) bg-(--surface) [scrollbar-width:thin] max-[760px]:absolute max-[760px]:inset-0 max-[760px]:w-full max-[760px]:border-0"
       aria-label={title}
     >
       <div className="relative bg-[linear-gradient(160deg,color-mix(in_srgb,var(--pink)_7%,var(--surface)),var(--surface)_72%)] px-[26px] pt-[30px] pb-3.5 max-[760px]:px-[22px] max-[760px]:pt-[15px] max-[760px]:pb-3">
         <button
-          className="mb-[18px] -ml-2 hidden items-center gap-1.25 border-0 bg-transparent p-2 font-bold text-[var(--muted)] max-[760px]:flex"
+          className="mb-[18px] -ml-2 hidden items-center gap-1.25 border-0 bg-transparent p-2 font-bold text-(--muted) max-[760px]:flex"
           onClick={onClose}
         >
           <ChevronLeft size={20} aria-hidden="true" /> {t("back")}
         </button>
         <button
-          className="absolute top-[18px] right-[18px] grid size-[42px] place-items-center rounded-xl border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] max-[760px]:hidden"
+          className="absolute top-[18px] right-[18px] grid size-[42px] place-items-center rounded-xl border border-(--border) bg-(--surface) text-(--text) max-[760px]:hidden"
           onClick={onClose}
           aria-label={t("close")}
         >
@@ -76,7 +76,7 @@ export function MarketingDetails({
             const community = source.url.match(/\/r\/([^/]+)/)?.[1] ?? "reddit";
             return (
               <blockquote
-                className="reddit-embed-bq m-0 border-0 bg-transparent py-3.5 text-[13px] leading-normal [&_a]:text-[var(--text)]"
+                className="reddit-embed-bq m-0 border-0 bg-transparent py-3.5 text-[13px] leading-normal [&_a]:text-(--text)"
                 data-embed-height="500"
                 data-embed-theme={embedTheme}
                 key={`${source.url}-${index}`}

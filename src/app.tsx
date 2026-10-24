@@ -77,7 +77,7 @@ export function App() {
 
   return (
     <AppContext.Provider value={context}>
-      <div className="flex h-dvh min-h-0 flex-col bg-[var(--bg)]">
+      <div className="flex h-dvh min-h-0 flex-col bg-(--bg)">
         <Navbar
           theme={theme}
           setTheme={setTheme}
