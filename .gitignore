@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+
+# TypeScript and Vite generated files
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.vite/
+
+# Environment variables and local Cloudflare configuration
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler/
+
+# Logs and test output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*~
