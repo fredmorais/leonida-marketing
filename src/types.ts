@@ -8,7 +8,6 @@ export type Source = {
 export type MarketingAction = {
   id: string;
   city: CityId;
-  title?: string;
   latitude: number;
   longitude: number;
   sources: Source[];
@@ -17,7 +16,6 @@ export type MarketingAction = {
 };
 export type CityConfig = {
   id: CityId;
-  name?: string;
   route: string;
   bounds: [number, number, number, number];
   center: [number, number];
