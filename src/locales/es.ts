@@ -1,0 +1,30 @@
+import en from './en'
+const es = { ...en,
+  map:'Mapa', about:'Acerca de', submit:'Enviar avistamiento', settings:'Ajustes', countdown:'19 de noviembre', theme:'Tema', language:'Idioma', system:'Automático', light:'Claro', dark:'Oscuro',
+  close:'Cerrar', back:'Volver al mapa', zoomIn:'Acercar', zoomOut:'Alejar', reset:'Restablecer mapa', selectCity:'Seleccionar ciudad', osmAttribution:'© colaboradores de OpenStreetMap', locationsNotice:'Algunas ubicaciones pueden no ser exactas',
+  noSightings:'Todavía no hay avistamientos', noSightingsBody:'Sé la primera persona en compartir algo con la comunidad.', submitTitle:'Comparte un avistamiento',
+  submitHelp:'Pega enlaces o cuéntanos qué viste. Incluye todo el contexto que tengas.', sightingDetails:'¿Qué encontraste?', sightingPlaceholder:'Pega una publicación, ubicación o cualquier detalle útil…',
+  copy:'Copiar envío', copied:'¡Copiado!', required:'Añade un enlace o algunos detalles antes de continuar.', menu:'Abrir menú',
+  aboutTitle:'¡El marketing de GTA 6 ha llegado a las calles!',
+  aboutBody1:'Tras las promesas de “marketing agresivo” de Strauss Zelnick, por fin hemos empezado a ver cómo el juego cobra vida en ciudades de todo el mundo, con superdeportivos personalizados, un dirigible volando e incluso restaurantes rebautizados que llevan Leonida al mundo real.',
+  aboutBody2:'Con novedades cada día, creé esta web para ayudar a la comunidad a seguir todo lo que está ocurriendo y contar los días hasta el 19 de noviembre. Algunas ubicaciones son aproximadas y las activaciones en movimiento, como los autobuses o el dirigible, obviamente no se muestran en tiempo real. Si quieres enviar algo que falta, usa el botón de la barra de navegación.',
+  aboutSourceBefore:'El código fuente de este proyecto está disponible y puedes consultarlo completo en mi', aboutSourceAfter:'Solo es posible gracias al trabajo de OpenFreeMap.',
+  aboutAiBefore:'He utilizado IA como ayuda en el desarrollo de este proyecto. Explico cómo lo hice con más detalle en', aboutAiLink:'esta publicación del blog',
+  aboutTranslationNote:'La versión en español de este sitio web y del artículo enlazado ha sido traducida con ayuda de inteligencia artificial.',
+  aboutDisclaimer:'Este proyecto no está afiliado de ninguna manera con Rockstar Games.',
+  contributeTitle:'Creado a partir de avistamientos', contributeBody:'Cada marcador representa una activación física, aunque varias personas publiquen sobre ella. Las fuentes comunitarias permiten comprobar y mejorar cada reporte.',
+  mapsTitle:'Sobre los mapas', mapsBody:'Los mapas interactivos usan datos de OpenStreetMap mediante mosaicos vectoriales de OpenFreeMap, con temas claro y oscuro inspirados en GTA VI.',
+  unofficialTitle:'Siempre no oficial', unofficialBody:'Este es un proyecto de fans sin fines comerciales. No está afiliado, respaldado ni patrocinado por Rockstar Games o Take-Two Interactive.',
+  cities:{ ...en.cities, 'new-york':'Nueva York' },
+  actions:{ ...en.actions,
+    'miami-kaseya-center':'Vice City en el Kaseya Center', 'miami-nine1nine-plane':'Pancarta aérea NINE1NINE', 'miami-beach-decor':'Toma de Miami Beach',
+    'miami-wynwood-murals':'Murales de Vice City en Wynwood', 'miami-vice-city-blimp':'Dirigible de Vice City', 'miami-weazel-news-van':'Furgoneta de Weazel News',
+    'miami-golf-carts':'Transportes del Circuito GTA VI', 'miami-metrorail':'Toma ferroviaria de Miami', 'miami-vault-boat':'Barco publicitario de The Vault', 'miami-taxi':'Taxi',
+    'miami-lamppost':'Pancarta de Vice City en una farola', 'miami-in-universe-billboard-1':'Valla del universo del juego 1', 'miami-in-universe-billboard-2':'Valla del universo del juego 2', 'miami-in-universe-billboard-3':'Valla del universo del juego 3',
+    'miami-promo-car-1':'Coche promocional de Vice City 1', 'miami-promo-car-2':'Coche promocional de Vice City 2', 'miami-promo-car-3':'Coche promocional de Vice City 3', 'miami-promo-car-4':'Coche promocional de Vice City 4', 'miami-promo-car-5':'Coche promocional de Vice City 5', 'miami-promo-car-6':'Coche promocional de Vice City 6',
+    'brooklyn-mural':'Brooklyn conoce Leonida', 'nyc-gta-vi-bus':'Autobús turístico de GTA VI', 'nyc-billboard-msg':'Valla de GTA VI', 'nyc-billboard-times-square':'Valla de GTA VI',
+    'chicago-bus-1':'Autobús de GTA VI', 'chicago-bus-2':'Autobús de GTA VI', 'chicago-bus-3':'Autobús de GTA VI', 'los-angeles-hollywood-mural':'En las paredes de LA',
+    'paris-towers':'Vice a lo grande', 'paris-kiosk':'Quiosco de Love Magazine'
+  }
+}
+export default es

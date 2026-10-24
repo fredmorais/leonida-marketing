@@ -1,0 +1,311 @@
+# Miami
+- id: miami-kaseya-center
+  city: miami
+  latitude: 25.7814
+  longitude: -80.188
+  icon: miami/kaseya-center.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1wx5bmv/took_the_drone_out_tonight/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1ww8dvb/welcome_to_vice_city_banner_is_up_outside_the/
+- id: miami-nine1nine-plane
+  city: miami
+  latitude: 25.788
+  longitude: -80.115
+  zoom: 2
+  icon: miami/plane.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x99z58/nine1nine_miami_beach_marketing/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x5twy6/spotted_nine1nine_banner_today_over_miami_beach/
+- id: miami-beach-decor
+  city: miami
+  latitude: 25.7826
+  longitude: -80.1302
+  zoom: 0.8
+  icon: miami/beach-umbrella.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x9xtyj/this_feels_surreal_its_like_living_in_the_game/
+- id: miami-wynwood-murals
+  city: miami
+  latitude: 25.8011
+  longitude: -80.1994
+  icon: miami/wynwood-mural.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x5w9wv/wynwood_is_officially_part_of_vice_city/
+- id: miami-vice-city-blimp
+  city: miami
+  latitude: 25.805
+  longitude: -80.16
+  zoom: 1.6
+  icon: miami/blimp.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x8gsic/stunning_footage_of_the_gta_6_blimp_flying_around/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x79mxz/this_is_crazy_miami_is_officially_vice_city_now/
+- id: miami-weazel-news-van
+  city: miami
+  latitude: 25.754
+  longitude: -80.205
+  icon: miami/weazel-news-van.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xakyob/weasel_news_van_spotted_in_miami/
+- id: miami-golf-carts
+  city: miami
+  latitude: 25.817
+  longitude: -80.188
+  icon: miami/golf-cart.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xa442b/gta_6_golf_carts_in_miami/
+- id: miami-metrorail
+  city: miami
+  latitude: 25.775
+  longitude: -80.1962
+  zoom: 0.8
+  icon: miami/metrorail.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xa0d2a/new_gta6_marketing_spotted_in_miami/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x99lop/the_miami_metromover_seems_to_be_getting_gta_6/
+- id: miami-vault-boat
+  city: miami
+  latitude: 25.767
+  longitude: -80.172
+  icon: miami/boat.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xb2jg4/the_vault_advertisement_on_a_boat/
+- id: miami-taxi
+  city: miami
+  latitude: 25.829
+  longitude: -80.185
+  icon: miami/taxi.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xe1gvp/folrydeme_taxis_the_fictional_taxi_company/
+- id: miami-lamppost
+  city: miami
+  latitude: 25.797
+  longitude: -80.186
+  icon: miami/lamp-post.png
+  zoom: 0.7
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xd4u05/new_look_at_the_gta_6_rebranded_streetlight/?utm_source=app_first_navigation&mweb_loid=t2_2p6w2doug0
+
+- id: miami-in-universe-billboard-1
+  city: miami
+  latitude: 25.806
+  longitude: -80.195
+  icon: miami/billboard-1.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xb68fm/new_in_universe_ads/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xa3pxh/all_kiosk_ads_in_wynwood/
+- id: miami-in-universe-billboard-2
+  city: miami
+  latitude: 25.773
+  longitude: -80.214
+  icon: miami/billboard-2.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xb68fm/new_in_universe_ads/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xa3pxh/all_kiosk_ads_in_wynwood/
+- id: miami-in-universe-billboard-3
+  city: miami
+  latitude: 25.801
+  longitude: -80.138
+  icon: miami/billboard-3.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xb68fm/new_in_universe_ads/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xa3pxh/all_kiosk_ads_in_wynwood/
+
+- id: miami-burgershot-wynwood
+  city: miami
+  latitude: 25.8009
+  longitude: -80.201
+  icon: miami/burgershot.png
+  zoom: 0.5
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xc0i02/rockstar_is_now_marketing_gta_6_with_a_reallife/
+- id: miami-burgershot-kaseya
+  city: miami
+  latitude: 25.7814
+  longitude: -80.188
+  icon: miami/burgershot.png
+  zoom: 0.5
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xc0i02/rockstar_is_now_marketing_gta_6_with_a_reallife/
+- id: miami-burgershot-little-havana
+  city: miami
+  latitude: 25.7658
+  longitude: -80.2207
+  icon: miami/burgershot.png
+  zoom: 0.5
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xc0i02/rockstar_is_now_marketing_gta_6_with_a_reallife/
+- id: miami-cluckin-bell-kaseya
+  city: miami
+  latitude: 25.7814
+  longitude: -80.188
+  zoom: 0.5
+  icon: miami/cluckin-bell.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xdf0nj/miami_heat_straight_out_of_the_game_right_onto/
+
+- id: miami-promo-car-1
+  city: miami
+  latitude: 25.751
+  longitude: -80.213
+  icon: miami/car-1.png
+  sources: &miami-car-sources
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x870dj/nice_clear_video_of_all_the_promo_cars_which_is/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x7m3im/rockstar_showing_out_in_miami_beach/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x7cr5j/another_look_at_gta_6_cars_remade_in_real_life/
+- id: miami-promo-car-2
+  city: miami
+  latitude: 25.759
+  longitude: -80.204
+  icon: miami/car-2.png
+  sources: *miami-car-sources
+- id: miami-promo-car-3
+  city: miami
+  latitude: 25.771
+  longitude: -80.208
+  icon: miami/car-3.png
+  sources: *miami-car-sources
+- id: miami-promo-car-4
+  city: miami
+  latitude: 25.811
+  longitude: -80.207
+  icon: miami/car-4.png
+  sources: *miami-car-sources
+- id: miami-promo-car-5
+  city: miami
+  latitude: 25.824
+  longitude: -80.197
+  icon: miami/car-5.png
+  sources: *miami-car-sources
+- id: miami-promo-car-6
+  city: miami
+  latitude: 25.815
+  longitude: -80.14
+  icon: miami/car-6.png
+  sources: *miami-car-sources
+
+# NYC
+- id: brooklyn-mural
+  city: new-york
+  latitude: 40.6782
+  longitude: -73.9442
+  icon: nyc/brooklyn-mural.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x5om3m/the_bk_mural_looks_better_in_person/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x52pst/a_perspective_i_hadnt_seen_of_the_gta_mural_shows/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x12e78/mural_advertising_in_brooklyn/
+- id: nyc-gta-vi-bus
+  city: new-york
+  latitude: 40.772
+  longitude: -73.9685
+  icon: nyc/bus-1.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xdq7ax/the_jason_side_of_the_new_york_bus/
+- id: nyc-billboard-msg
+  city: new-york
+  latitude: 40.7505
+  longitude: -73.9935
+  icon: nyc/billboard.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xcwrzy/nyc/
+- id: nyc-billboard-times-square
+  city: new-york
+  latitude: 40.7572
+  longitude: -73.9898
+  icon: nyc/billboard.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x6u297/ad_times_square/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x70yyv/giant_gta_6_billboard_in_times_square_in_nyc_the/
+
+# Chicago
+- id: chicago-bus-1
+  city: chicago
+  latitude: 41.8988
+  longitude: -87.6258
+  icon: chicago/bus-1.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xbyego/2nd_gta_vi_bus_spotted_in_chicago_with_different/
+- id: chicago-bus-2
+  city: chicago
+  latitude: 41.8717
+  longitude: -87.6286
+  icon: chicago/bus-2.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x9eivm/my_pics_of_the_gta_vi_tour_bus_in_chicago/
+- id: chicago-bus-3
+  city: chicago
+  latitude: 41.8917
+  longitude: -87.6286
+  icon: chicago/bus-3.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x7ncom/i_vice_city_bus/
+
+# Los Angeles
+- id: los-angeles-hollywood-mural
+  city: los-angeles
+  latitude: 34.1019
+  longitude: -118.3253
+  icon: los-angeles/hollywood-mural.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/grandtheftauto/comments/1x7sr36/gtavi_hollywood_mural/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1x6qhv8/gta_mural_hollywood_walk_of_fame/
+
+# Paris
+- id: paris-towers
+  city: paris
+  latitude: 48.8649
+  longitude: 2.4145
+  icon: paris/skyscrapper.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xa2g5g/paris_its_almost_finished_already/
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1wz6xg3/gta_vi_advertising_poster_in_paris_france/
+- id: paris-kiosk
+  city: paris
+  icon: paris/kiosk.png
+  latitude: 48.8698
+  longitude: 2.3078
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1wy11gd/gta_vi_advertisements_in_paris/

@@ -1,0 +1,65 @@
+- id: miami
+  route: /
+  bounds:
+    - -80.23
+    - 25.745
+    - -80.1
+    - 25.855
+  center:
+    - -80.165
+    - 25.795
+  defaultZoom: 11.7
+  minZoom: 11
+  maxZoom: 17
+- id: new-york
+  route: /new-york
+  bounds:
+    - -74.08
+    - 40.6
+    - -73.82
+    - 40.89
+  center:
+    - -73.95
+    - 40.745
+  defaultZoom: 10
+  minZoom: 9
+  maxZoom: 17
+- id: chicago
+  route: /chicago
+  bounds:
+    - -87.82
+    - 41.74
+    - -87.5
+    - 42.03
+  center:
+    - -87.6298
+    - 41.883
+  defaultZoom: 13
+  minZoom: 9
+  maxZoom: 17
+- id: los-angeles
+  route: /los-angeles
+  bounds:
+    - -118.7
+    - 33.7
+    - -117.95
+    - 34.35
+  center:
+    - -118.3253
+    - 34.1019
+  defaultZoom: 12.5
+  minZoom: 9
+  maxZoom: 17
+- id: paris
+  route: /paris
+  bounds:
+    - 2.2
+    - 48.78
+    - 2.5
+    - 48.94
+  center:
+    - 2.35
+    - 48.86
+  defaultZoom: 10.5
+  minZoom: 9.5
+  maxZoom: 17

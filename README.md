@@ -2,6 +2,8 @@
 
 A responsive, map-focused React app for cataloguing real-world GTA VI marketing sightings. It uses MapLibre GL JS with OpenFreeMap vector tiles, OpenStreetMap data, static JSON content, and no backend.
 
+![Leonida IRL map preview](./preview.png)
+
 ## Run locally
 
 ```bash
