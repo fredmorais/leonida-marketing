@@ -1,6 +1,7 @@
-import type { TranslationKey } from '../i18n'
+import { useAppContext } from '../app-context'
 
-export function PrivacyPage({ t }: { t: (key: TranslationKey) => string }) {
+export function PrivacyPage() {
+  const { t } = useAppContext()
   return <main className="page-shell"><article className="page-post legal-post">
     <p className="eyebrow">LEONIDA MARKETING / {t('lastUpdated')}</p><h1 className="page-title">{t('privacyTitle')}</h1><p>{t('privacyIntro')}</p>
     <h2>{t('privacyCloudflareTitle')}</h2><p>{t('privacyCloudflareBody')}</p>

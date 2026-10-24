@@ -1,10 +1,10 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom'
-import { App } from './App'
+import { App } from './app'
 import { cities } from './data/cities'
-import { AboutRoute } from './routes/AboutRoute'
-import { MapRoute } from './routes/MapRoute'
-import { PrivacyRoute } from './routes/PrivacyRoute'
-import { TermsRoute } from './routes/TermsRoute'
+import { AboutPage } from './pages/about-page'
+import { MapPage } from './pages/map-page'
+import { PrivacyPage } from './pages/privacy-page'
+import { TermsPage } from './pages/terms-page'
 
 const cityRoutes = cities.map(city => ({
   index: city.route === '/' ? true as const : undefined,
@@ -18,15 +18,15 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        element: <MapRoute />,
+        element: <MapPage />,
         children: [
           ...cityRoutes,
           { path: 'action/:actionId', element: null },
         ],
       },
-      { path: 'about', element: <AboutRoute /> },
-      { path: 'privacy', element: <PrivacyRoute /> },
-      { path: 'terms', element: <TermsRoute /> },
+      { path: 'about', element: <AboutPage /> },
+      { path: 'privacy', element: <PrivacyPage /> },
+      { path: 'terms', element: <TermsPage /> },
       { path: '*', element: <Navigate to="/" replace /> },
     ],
   },

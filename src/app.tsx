@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { AppContext } from './app-context'
-import { Navbar } from './components/Navbar'
-import { SubmitDialog } from './components/SubmitDialog'
+import { Navbar } from './components/navbar'
+import { SubmitDialog } from './components/submit-dialog'
 import { translate, type TranslationKey } from './i18n'
 import type { Language, ThemeChoice } from './types'
 

@@ -8,9 +8,9 @@ import {
   applyGtaTheme,
   openFreeMapStyle,
   type MapTheme,
-} from "../maps/gtaTheme";
+} from "../maps/gta-theme";
 import type { CityConfig, MarketingAction } from "../types";
-import { CitySelector } from "./CitySelector";
+import { CitySelector } from "./city-selector";
 import { Icon } from "./icons";
 
 type Props = {

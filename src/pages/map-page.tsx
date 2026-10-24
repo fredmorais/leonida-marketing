@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useMemo } from 'react'
 import { Navigate, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
-import { CityMap } from '../components/CityMap'
-import { MarketingDetails } from '../components/MarketingDetails'
+import { CityMap } from '../components/city-map'
+import { MarketingDetails } from '../components/marketing-details'
 import { useAppContext } from '../app-context'
 import { marketingActions } from '../data/actions'
 import { cityById, routeToCity } from '../data/cities'
 
-export function MapRoute() {
+export function MapPage() {
   const { actionId } = useParams()
   const location = useLocation()
   const navigate = useNavigate()

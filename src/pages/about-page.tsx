@@ -1,5 +1,7 @@
-import type { TranslationKey } from '../i18n'
-export function AboutPage({ t }: { t: (key: TranslationKey) => string }) {
+import { useAppContext } from '../app-context'
+
+export function AboutPage() {
+  const { t } = useAppContext()
   const translationNote = t('aboutTranslationNote')
   return <main className="page-shell">
     <article className="page-post">

@@ -1,6 +1,7 @@
-import type { TranslationKey } from '../i18n'
+import { useAppContext } from '../app-context'
 
-export function TermsPage({ t }: { t: (key: TranslationKey) => string }) {
+export function TermsPage() {
+  const { t } = useAppContext()
   return <main className="page-shell"><article className="page-post legal-post">
     <p className="eyebrow">LEONIDA MARKETING / {t('lastUpdated')}</p><h1 className="page-title">{t('termsTitle')}</h1><p>{t('termsIntro')}</p>
     <h2>{t('termsAccuracyTitle')}</h2><p>{t('termsAccuracyBody')}</p>
