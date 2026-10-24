@@ -1,4 +1,5 @@
 import { Map as MapLibreMap, Marker, setWorkerUrl } from "maplibre-gl";
+import { MapPin, Minus, Plus, RotateCcw } from "lucide-react";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useRef, useState } from "react";
@@ -10,7 +11,6 @@ import {
 } from "../maps/gta-theme";
 import type { CityConfig, MarketingAction } from "../types";
 import { CitySelector } from "./city-selector";
-import { Icon } from "./icons";
 
 type Props = {
   city: CityConfig;
@@ -262,7 +262,7 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
       {!actions.length && (
         <div className="absolute top-1/2 left-1/2 z-4 w-[min(330px,calc(100%-40px))] -translate-x-1/2 -translate-y-1/2 rounded-[20px] border border-[var(--border)] bg-[var(--surface-glass)] p-7 text-center shadow-[var(--shadow)] backdrop-blur-2xl">
           <span className="inline-grid size-12 place-items-center rounded-[15px] bg-[color-mix(in_srgb,var(--pink)_10%,transparent)] text-[var(--pink)]">
-            <Icon name="pin" size={24} />
+            <MapPin size={24} aria-hidden="true" />
           </span>
           <strong className="font-display mt-3 mb-1.25 block text-lg font-bold">
             {t("noSightings")}
@@ -294,16 +294,16 @@ export function CityMap({ city, actions, selectedId, onSelect, t }: Props) {
           onClick={() => mapRef.current?.zoomIn()}
           aria-label={t("zoomIn")}
         >
-          <Icon name="plus" />
+          <Plus size={20} aria-hidden="true" />
         </button>
         <button
           onClick={() => mapRef.current?.zoomOut()}
           aria-label={t("zoomOut")}
         >
-          <Icon name="minus" />
+          <Minus size={20} aria-hidden="true" />
         </button>
         <button onClick={resetMap} aria-label={t("reset")}>
-          <Icon name="reset" />
+          <RotateCcw size={20} aria-hidden="true" />
         </button>
       </div>
     </section>

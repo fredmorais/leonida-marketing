@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
+import { Menu, Plus, Settings2, X } from 'lucide-react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import type { Language, ThemeChoice } from '../types'
 import type { TranslationKey } from '../i18n'
 import logoUrl from '../assets/logo.png'
 import logoDarkUrl from '../assets/logo-dark.png'
-import { Icon } from './icons'
 
 type Props = { theme: ThemeChoice; setTheme: (value: ThemeChoice) => void; language: Language; setLanguage: (value: Language) => void; t: (key: TranslationKey) => string; onSubmit: () => void }
 
@@ -83,13 +83,13 @@ export function Navbar({ theme, setTheme, language, setLanguage, t, onSubmit }: 
     </div>
     <div className="flex gap-4 border-t border-[var(--border)] pt-3">{[['/privacy', t('privacy')], ['/terms', t('terms')]].map(([to, label]) => <NavLink key={to} to={to} className={({ isActive }) => `text-xs font-bold no-underline ${isActive ? 'text-[var(--pink)]' : 'text-[var(--muted)] hover:text-[var(--pink)]'}`}>{label}</NavLink>)}</div>
   </>
-  const submitButton = <button className="grid size-[42px] shrink-0 place-items-center rounded-xl border-0 bg-gradient-to-br from-[var(--pink-bright)] to-[var(--purple)] p-0 font-bold text-white shadow-[0_6px_20px_rgba(233,24,158,.24)] hover:-translate-y-px hover:brightness-107 max-[760px]:mt-1 max-[760px]:size-12 max-[760px]:min-h-12 max-[760px]:self-end" aria-label={t('submit')} title={t('submit')} onClick={() => { setOpen(false); setSettingsOpen(false); onSubmit() }}><Icon name="plus" /></button>
+  const submitButton = <button className="grid size-[42px] shrink-0 place-items-center rounded-xl border-0 bg-gradient-to-br from-[var(--pink-bright)] to-[var(--purple)] p-0 font-bold text-white shadow-[0_6px_20px_rgba(233,24,158,.24)] hover:-translate-y-px hover:brightness-107 max-[760px]:mt-1 max-[760px]:size-12 max-[760px]:min-h-12 max-[760px]:self-end" aria-label={t('submit')} title={t('submit')} onClick={() => { setOpen(false); setSettingsOpen(false); onSubmit() }}><Plus size={20} aria-hidden="true" /></button>
 
   return <header className="relative z-50 flex h-[72px] shrink-0 items-center border-b border-[var(--border)] bg-[var(--surface)] pr-[max(24px,env(safe-area-inset-right))] pl-[max(24px,env(safe-area-inset-left))] max-[760px]:h-16 max-[760px]:gap-2 max-[760px]:pr-[max(12px,env(safe-area-inset-right))] max-[760px]:pl-[max(12px,env(safe-area-inset-left))]">
     <Link to="/" className="inline-flex shrink-0 items-center" aria-label="Leonida Marketing home"><img className="h-[46px] w-auto object-contain dark:hidden max-[760px]:h-9" src={logoUrl} alt="Leonida Marketing" /><img className="hidden h-[46px] w-auto object-contain dark:block max-[760px]:h-9" src={logoDarkUrl} alt="" aria-hidden="true" /></Link>
-    <nav className="ml-[34px] flex w-full items-center gap-2.5 max-[760px]:hidden" aria-label="Main navigation">{navLinks}<div className="mr-auto"/><Countdown t={t}/><div ref={settingsRef} className="relative"><button type="button" className={`${iconButton} ${settingsOpen ? 'border-[color-mix(in_srgb,var(--pink)_35%,var(--border))] bg-[color-mix(in_srgb,var(--pink)_7%,var(--surface))] text-[var(--pink)]' : ''}`} aria-label={t('settings')} aria-expanded={settingsOpen} onClick={() => setSettingsOpen(value => !value)}><Icon name="settings" /></button>{settingsOpen && <div className="absolute top-[calc(100%+10px)] right-0 z-60 grid w-[310px] gap-3.5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[var(--shadow)]">{settings}</div>}</div>{submitButton}</nav>
+    <nav className="ml-[34px] flex w-full items-center gap-2.5 max-[760px]:hidden" aria-label="Main navigation">{navLinks}<div className="mr-auto"/><Countdown t={t}/><div ref={settingsRef} className="relative"><button type="button" className={`${iconButton} ${settingsOpen ? 'border-[color-mix(in_srgb,var(--pink)_35%,var(--border))] bg-[color-mix(in_srgb,var(--pink)_7%,var(--surface))] text-[var(--pink)]' : ''}`} aria-label={t('settings')} aria-expanded={settingsOpen} onClick={() => setSettingsOpen(value => !value)}><Settings2 size={20} aria-hidden="true" /></button>{settingsOpen && <div className="absolute top-[calc(100%+10px)] right-0 z-60 grid w-[310px] gap-3.5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[var(--shadow)]">{settings}</div>}</div>{submitButton}</nav>
     <div className="ml-auto hidden max-[760px]:block"><Countdown t={t}/></div>
-    <button ref={buttonRef} className={`${iconButton} hidden max-[760px]:grid`} aria-label={t('menu')} aria-expanded={open} onClick={() => setOpen(v => !v)}><Icon name={open ? 'close' : 'menu'} /></button>
+    <button ref={buttonRef} className={`${iconButton} hidden max-[760px]:grid`} aria-label={t('menu')} aria-expanded={open} onClick={() => setOpen(v => !v)}>{open ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}</button>
     {open && <><button className="fixed inset-x-0 top-16 bottom-0 hidden border-0 bg-[rgba(15,12,23,.45)] max-[760px]:block" aria-label={t('close')} onClick={() => { setOpen(false); buttonRef.current?.focus() }} /><div ref={menuRef} className="absolute top-[calc(100%+8px)] right-3 left-3 hidden flex-col gap-2 rounded-[18px] border border-[var(--border)] bg-[var(--surface)] p-3.5 shadow-[var(--shadow)] max-[760px]:flex" aria-label="Mobile navigation">{navLinks}{settings}{submitButton}</div></>}
   </header>
 }
