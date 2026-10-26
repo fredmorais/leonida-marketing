@@ -99,7 +99,7 @@
   zoom: 0.7
   sources:
     - platform: reddit
-      url: https://www.reddit.com/r/GTA6/comments/1xd4u05/new_look_at_the_gta_6_rebranded_streetlight/?utm_source=app_first_navigation&mweb_loid=t2_2p6w2doug0
+      url: https://www.reddit.com/r/GTA6/comments/1xd4u05/new_look_at_the_gta_6_rebranded_streetlight/
 
 - id: miami-in-universe-billboard-1
   city: miami
@@ -211,6 +211,44 @@
   longitude: -80.14
   icon: miami/car-6.png
   sources: *miami-car-sources
+
+- id: miami-manatees-car
+  city: miami
+  latitude: 25.838
+  longitude: -80.207
+  icon: miami/car-manatees.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xeboo2/saw_this_manatees_car_on_snap_maps_in_miami/
+- id: miami-biscayne-mural
+  city: miami
+  latitude: 25.753
+  longitude: -80.154
+  icon: miami/biscayne-mural.png
+  sources:
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xbqo6m/new_billboard_in_biscayne
+
+- id: miami-dix-billboard
+  city: miami
+  latitude: 25.848
+  longitude: -80.172
+  icon: miami/dix-billboard.png
+  sources: &new-billboard-sources
+    - platform: reddit
+      url: https://www.reddit.com/r/GTA6/comments/1xegpxi/new_advertisement_spotted_and_three_other/
+- id: miami-juice-loose-billboard
+  city: miami
+  latitude: 25.749
+  longitude: -80.205
+  icon: miami/juice-loose-billboard.png
+  sources: *new-billboard-sources
+- id: miami-macca-billboard
+  city: miami
+  latitude: 25.825
+  longitude: -80.118
+  icon: miami/macca-billboard.png
+  sources: *new-billboard-sources
 
 # NYC
 - id: brooklyn-mural

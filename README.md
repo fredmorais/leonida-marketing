@@ -39,6 +39,7 @@ npm run preview
 - Sightings are stored in `src/data/actions.yaml`.
 - Cities, geographic bounds, centers, and zoom limits are stored in `src/data/cities.yaml`.
 - Marker images live under `src/assets/actions/<city>/` and are discovered automatically during the build.
+- Compress PNG markers with `find src/assets/actions -name '*.png' -exec sips -Z 256 {} \;` (macOS).
 - City names and event titles live in `src/locales/en.ts`, `pt.ts`, `es.ts`, and `fr.ts`.
 - Theme colors and shared map tokens are CSS custom properties at the top of `src/styles.css`.
 
